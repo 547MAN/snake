@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake++</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="scores">
+      <div class="highScore">
+        <p class="highScoreTxt">
+          Highscore: <span class="highScoreValue">0</span>
+        </p>
+      </div>
+      <div class="score">
+        <p class="scoreTxt">Current Score: <span class="scoreValue">0</span></p>
+      </div>
+    </div>
+    <div class="playGame"><button class="startGame">PLAY!</button></div>
+    <div class="loseMsg"><h2 class="loseMsgTxt">You Lost</h2></div>
+    <div class="replayGame">
+      <button class="reStartGame">PLAY AGAIN!</button>
+    </div>
+
+    <div class="snake-game"></div>
+    <div class="arrowBtnsBox" tabindex="0">
+      <div class="arrowButtons">
+        <div></div>
+        <button class="playBtns upBtn">⬆️</button>
+        <div></div>
+        <button class="playBtns downBtn">⬇️</button>
+        <div></div>
+        <button class="playBtns leftBtn">⬅️</button>
+        <div></div>
+        <button class="playBtns rightBtn">➡️</button>
+        <div></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

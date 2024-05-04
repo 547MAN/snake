@@ -1,0 +1,161 @@
+body {
+  background: white;
+}
+.scores {
+  display: flex;
+  margin: 5px;
+  font-size: 50px;
+}
+.highScore {
+  margin-right: auto;
+}
+.score {
+  margin-left: auto;
+}
+.playGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.startGame {
+  font-size: 90px;
+  z-index: 999;
+  margin: 0 0;
+  padding: 0 0;
+  background: transparent;
+  color: red;
+  border: none;
+}
+
+.startGame:hover {
+  scale: 1.5;
+}
+.snake-game {
+  /* My code */
+  /* --------------------- */
+  height: 500px;
+  width: 500px;
+  background: aqua;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* -------------------- */
+}
+.snake-game div {
+  width: 20px;
+  height: 20px;
+
+  /* border: 1px solid black;
+  box-sizing: border-box; */
+}
+.snake {
+  background: green;
+}
+
+.apple {
+  background: yellow;
+  border-radius: 20px;
+}
+.arrowBtnsBox {
+  margin: 150px;
+  height: 300px;
+  width: 300px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+.arrowButtons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.playBtns {
+  font-size: 40px;
+  padding: 15px;
+}
+
+.upBtn {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.downBtn {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.leftBtn {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.rightBtn {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.upBtn,
+.downBtn {
+  background-color: rgb(208, 255, 0);
+}
+
+.leftBtn,
+.rightBtn {
+  background-color: rgb(208, 0, 255);
+}
+
+.reStartGame {
+  display: none;
+  font-size: 80px;
+  margin: 0 0;
+  padding: 0 0;
+  background: transparent;
+  color: red;
+  border: none;
+  position: fixed; /* This positions the button relative to the viewport */
+  top: 50%; /* Positions the button halfway down the viewport */
+  left: 50%; /* Positions the button halfway across the viewport */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offsets the button's position by half its own width and height */
+  z-index: 1000; /* Ensures the button overlays everything */
+  transform-origin: center;
+}
+.reStartGame:hover {
+  transform: translate(-50%, -50%) scale(1.2) scale(1.2);
+}
+
+.loseMsg {
+  margin: 0 0;
+  padding: 0 0;
+  position: fixed; /* This positions the button relative to the viewport */
+  top: 25%; /* Positions the button halfway down the viewport */
+  left: 50%; /* Positions the button halfway across the viewport */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offsets the button's position by half its own width and height */
+  z-index: 1000; /* Ensures the button overlays everything */
+  transform-origin: center;
+}
+.loseMsgTxt {
+  display: none;
+  font-size: 170px;
+  font-weight: bold;
+}
